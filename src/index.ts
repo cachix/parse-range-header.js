@@ -16,6 +16,10 @@ type Range =
 // https://developers.cloudflare.com/r2/data-access/workers-api/workers-api-reference/#ranged-reads
 // https://www.rfc-editor.org/rfc/rfc7233
 function parseRange(str: string): R2Range | undefined {
+  if (str.length === 0) {
+    return;
+  }
+
   const rangeRequest = str.split('bytes=')[1] ?? '';
   // Invalid range format or unsupported range unit
   if (rangeRequest === '') {
