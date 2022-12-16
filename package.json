@@ -1,0 +1,26 @@
+{
+  "name": "parse-range-header",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build": "tsc",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cachix/parse-range-header.js.git"
+  },
+  "author": "",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/cachix/parse-range-header.js/issues"
+  },
+  "homepage": "https://github.com/cachix/parse-range-header.js#readme",
+  "devDependencies": {
+    "@cloudflare/workers-types": "^4.20221111.1",
+    "@types/jest": "^29.2.4",
+    "jest": "^29.3.1",
+    "ts-jest": "^29.0.3",
+    "typescript": "^4.9.4"
+  }
+}
