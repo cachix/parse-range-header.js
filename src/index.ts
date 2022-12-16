@@ -79,6 +79,6 @@ function makeContentRange(file: R2Object): string {
   }
 
   const offset = range.offset ?? 0;
-  const length = range.offset ?? 0;
+  const length = range.length ?? 0;
   return `${offset}-${offset + length - 1}/${file.size}`;
 }
